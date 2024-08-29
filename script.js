@@ -53,3 +53,22 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+function checkCredentials() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+    const successMessage = document.getElementById('success-message');
+
+    if (username === 'shlok' && password === 'jain') {
+        errorMessage.classList.add('hiddenMSG');
+        successMessage.classList.remove('hiddenMSG');
+        setTimeout(() => {
+            successMessage.classList.add('hiddenMSG');
+        }, 5000); 
+
+    } else {
+        successMessage.classList.add('hiddenMSG');
+        errorMessage.classList.remove('hiddenMSG');
+    }
+}
