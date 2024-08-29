@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDocs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contact" id="contact">
+        <h2 class="heading">Be <span>Secure</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Login Name"  id="username" name="username" required>
+                <input type="password" placeholder="Password" id="password" name="password" required>
+            </div>
+
+            <input type="Submit" value="See All" class="btn" onclick="checkCredentials()">
+
+            <div id="error-message" class="hiddenMSG">Incorrect username or password.</div>
+            <div id="success-message" class="hiddenMSG">
+                <p>Welcome! Here is your <a href="https://drive.google.com/drive/folders/1IgpcdfC9CSbNKHIyGQBRYyhcq_UArEiN" target="_blank">document</a>.</p>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
