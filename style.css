@@ -246,6 +246,12 @@ font-weight: 600;
     margin-top: 2rem;
     cursor: pointer;
 }
+.button{
+    background-color: #323946;
+}
+.hiddenMSG{
+    display: none;
+}
 .footer{
     display: flex;
     justify-content: space-between;
