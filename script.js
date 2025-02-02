@@ -60,7 +60,7 @@ function checkCredentials() {
     const errorMessage = document.getElementById('error-message');
     const successMessage = document.getElementById('success-message');
 
-    if (username === 'shlok' && password === 'jain') {
+    if (username === 'Shlok' && password === 'Shl@k') {
         errorMessage.classList.add('hiddenMSG');
         successMessage.classList.remove('hiddenMSG');
         setTimeout(() => {
